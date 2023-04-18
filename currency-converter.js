@@ -1,13 +1,11 @@
-
 {
 	const calculateResault = (amount, currency) => {
 		const EUR = 4.6721;
 		const USD = 4.3076;
+		
 		switch (currency) {
 			case "USD":
 				return amount / EUR;
-
-
 			case "EUR":
 				return amount / USD;
 
@@ -36,7 +34,6 @@
 	const init = () => {
 
 		const formElement = document.querySelector(".form-js");
-
 		formElement.addEventListener("submit", onFormSubmit);
 	};
 
